@@ -33,6 +33,13 @@ function install_docker_and_tools() {
     sudo chmod +x /usr/local/bin/ctop
 }
 
+function install_ansible() {
+    sudo apt update
+    sudo apt install software-properties-common
+    sudo add-apt-repository --yes --update ppa:ansible/ansible
+    sudo apt install ansible
+}
+
 function config_base_user() {
     user=$1
 
@@ -52,5 +59,7 @@ USER='whoami'
 install_basic_tools
 
 install_docker_and_tools
+
+install_ansible
 
 config_base_user $USER

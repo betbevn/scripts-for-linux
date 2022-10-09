@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-SERVER="";
-PW="";
-DB="";
+SERVER="core-local";
+PW="postgres";
+DB='core-local';
 
 echo "echo stop & remove old docker [$SERVER]";
 echo "echo starting new fresh instance of [$SERVER]"
