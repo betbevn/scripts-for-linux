@@ -59,7 +59,6 @@
 
   ```sql
   -- For DEV environment
-  -- ex: make all permission access specified database svm-iam-dev
   CREATE DATABASE "lab-core-dev";
   CREATE USER labcoredev WITH PASSWORD '1234';
   GRANT ALL PRIVILEGES ON DATABASE "lab-core-dev" to labcoredev;
@@ -67,7 +66,6 @@
 
   ```sql
   -- For STAGE environment
-  -- ex: make all permission access specified database svm-iam-dev
   CREATE USER "labcorestage" WITH PASSWORD '1234';
   ALTER USER "labcorestage" WITH LOGIN;
 
