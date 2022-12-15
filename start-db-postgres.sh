@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-SERVER="core-local";
-PW="postgres";
-DB='core-local';
+SERVER='vmo-crypto-local';
+PW='g$fKD!sd$101022Lhdev';
+DB='vmo-crypto-local';
 
 echo "echo stop & remove old docker [$SERVER]";
 echo "echo starting new fresh instance of [$SERVER]"
@@ -20,4 +20,6 @@ SLEEP 3;
 
 # create the db 
 echo "CREATE DATABASE $DB ENCODING 'UTF-8';" | docker exec -i $SERVER psql -U postgres
+echo "CREATE USER vmocryptodev WITH PASSWORD $PW;" | docker exec -i $SERVER psql -U postgres
+echo "CREATE USER vmocryptodev WITH PASSWORD $PW;" | docker exec -i $SERVER psql -U postgres
 echo "\l" | docker exec -i $SERVER psql -U postgres
