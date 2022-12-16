@@ -3,7 +3,7 @@ set -e
 
 
 SERVER="redis-local";
-PW="5hGH+f62RFO9GK22YUy3WbPzhPNV8fdjMI3XA2UabAflskDgiinSDgkor6QRyf7Jt8xBygmxXVK14snV%"
+PW=""
 
 
 echo "stop & remove old docker [$SERVER]";
