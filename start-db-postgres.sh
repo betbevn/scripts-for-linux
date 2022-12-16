@@ -1,10 +1,10 @@
 #!/bin/bash
 set -e
 
-SERVER="vmo-crypto-local";
-USER="vmocryptolocal";
+SERVER="db-local";
+USER="dblocal";
 PW="'gfKDsd101022Lhdev'";
-DB='"vmo-crypto-local"';
+DB='"db-local"';
 
 echo "echo stop & remove old docker [$SERVER]";
 echo "echo starting new fresh instance of [$SERVER]"
